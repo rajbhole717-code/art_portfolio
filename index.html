@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raj's Art Portfolio — A curated collection of pencil sketches, charcoal drawings, portraits, landscapes, and anime fan art.">
+    <title>Raj — Art Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">R</span>aj<span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grain"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle reveal-up">Pencil &amp; Charcoal Artist</p>
+            <h1 class="hero-title">
+                <span class="reveal-up delay-1">Where Lines</span>
+                <span class="reveal-up delay-2">Meet <em>Emotion</em></span>
+            </h1>
+            <p class="hero-description reveal-up delay-3">Handcrafted sketches exploring portraits, landscapes, mythology, and the boundless world of imagination.</p>
+            <a href="#gallery" class="hero-cta reveal-up delay-4">
+                <span>Explore My Work</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <p class="section-label reveal-up">Portfolio</p>
+            <h2 class="section-title reveal-up delay-1">Selected Works</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar reveal-up delay-2">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="portrait">Portraits</button>
+            <button class="filter-btn" data-filter="landscape">Landscapes</button>
+            <button class="filter-btn" data-filter="mythology">Mythology</button>
+            <button class="filter-btn" data-filter="anime">Anime</button>
+            <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            <button class="filter-btn" data-filter="study">Studies</button>
+        </div>
+
+        <!-- Masonry Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+
+            <div class="gallery-item" data-category="portrait" data-title="Bearded Portrait Study" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20260502_013524.jpg" alt="Detailed bearded man portrait sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Bearded Portrait</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape" data-title="Misty Mountain Village" data-medium="Pencil & Charcoal on Paper">
+                <img src="SketchUp_/IMG_20260430_173618.jpg" alt="Atmospheric mountain village landscape sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Landscape</span>
+                    <h3>Misty Mountain Village</h3>
+                    <p>Pencil &amp; Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="mythology" data-title="Lord Krishna — Flute Player" data-medium="Charcoal on Paper">
+                <img src="SketchUp_/IMG-20260424-WA0190.jpeg" alt="Lord Krishna playing flute charcoal sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Mythology</span>
+                    <h3>Krishna — The Flautist</h3>
+                    <p>Charcoal on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Casual Portrait" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20260201_134647.jpg" alt="Casual man portrait pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Casual Portrait</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="anime" data-title="Tanjiro & Dragon" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20251224_231604.jpg" alt="Tanjiro from Demon Slayer with dragon pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Anime</span>
+                    <h3>Tanjiro &amp; Dragon</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="wildlife" data-title="Prowling Tiger" data-medium="Charcoal on Paper">
+                <img src="SketchUp_/IMG_20250722_094312.jpg" alt="Fierce tiger walking charcoal drawing" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Wildlife</span>
+                    <h3>Prowling Tiger</h3>
+                    <p>Charcoal on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="mythology" data-title="Divine Krishna" data-medium="Pencil & Charcoal">
+                <img src="SketchUp_/IMG_20260419_090604.jpg" alt="Detailed Lord Krishna with ornaments pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Mythology</span>
+                    <h3>Divine Krishna</h3>
+                    <p>Pencil &amp; Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Hair & Beard Study" data-medium="Charcoal Pencil">
+                <img src="SketchUp_/IMG_20260330_190221.jpg" alt="Detailed hair and beard charcoal study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Hair &amp; Beard Study</h3>
+                    <p>Charcoal Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="anime" data-title="Kakashi Hatake" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20240410_222821.jpg" alt="Kakashi Hatake from Naruto pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Anime</span>
+                    <h3>Kakashi Hatake</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape" data-title="Lakeside Chapel" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20241109_181037.jpg" alt="Chapel by the lake pencil landscape sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Landscape</span>
+                    <h3>Lakeside Chapel</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape" data-title="Countryside Scene" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20241109_181048.jpg" alt="Countryside landscape pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Landscape</span>
+                    <h3>Countryside Scene</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Expressive Portrait" data-medium="Pencil & Charcoal">
+                <img src="SketchUp_/IMG_20241110_140516.jpg" alt="Expressive portrait with dramatic lighting" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Expressive Portrait</h3>
+                    <p>Pencil &amp; Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Character Study" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20240107_223318(1).jpg" alt="Character portrait pencil study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Character Study</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="anime" data-title="Anime Sketch" data-medium="Pencil on Paper">
+                <img src="SketchUp_/IMG_20240410_231834.jpg" alt="Anime character pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Anime</span>
+                    <h3>Anime Sketch</h3>
+                    <p>Pencil on Paper</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Reference Study I" data-medium="Pencil">
+                <img src="SketchUp_/4832e64c35a6746d895dfdcc941ee282(1).jpg" alt="Pencil reference study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Reference Study I</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Dramatic Portrait" data-medium="Charcoal">
+                <img src="SketchUp_/4d72f1878c072c3a2fbef21ba9538f92.jpg" alt="Dramatic portrait charcoal drawing" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Dramatic Portrait</h3>
+                    <p>Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Reference Study II" data-medium="Pencil">
+                <img src="SketchUp_/5bf16e9c6a647d09a2b1bd7ce602d95f.jpg" alt="Pencil reference study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Reference Study II</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Reference Study III" data-medium="Pencil">
+                <img src="SketchUp_/736204622e27fa544e88af9447a6ce22.jpg" alt="Pencil reference study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Reference Study III</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Intense Gaze" data-medium="Charcoal">
+                <img src="SketchUp_/8290e2572c19b5b85804d1893bd88f44.jpg" alt="Portrait with intense gaze charcoal" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Intense Gaze</h3>
+                    <p>Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Commission Work" data-medium="Pencil & Charcoal">
+                <img src="SketchUp_/a-jar-of-creativity-ranchhodnagar-rajkot-sketch-artists-0aqswv1ab9(1).jpg" alt="Commission portrait sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Commission Work</h3>
+                    <p>Pencil &amp; Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Reference Study IV" data-medium="Pencil">
+                <img src="SketchUp_/a8fd2bce103031cf13b7571778c180d5.jpg" alt="Pencil reference study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Reference Study IV</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="portrait" data-title="Dramatic Lighting" data-medium="Charcoal">
+                <img src="SketchUp_/e67a6d29b6712434428754ad826046da(1).jpg" alt="Portrait with dramatic lighting charcoal" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Portrait</span>
+                    <h3>Dramatic Lighting</h3>
+                    <p>Charcoal</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="study" data-title="Reference Study V" data-medium="Pencil">
+                <img src="SketchUp_/e9507eefdb690994f3022cb20e5dda12.jpg" alt="Pencil reference study" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Study</span>
+                    <h3>Reference Study V</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscape" data-title="Scenic Vista" data-medium="Pencil">
+                <img src="SketchUp_/IMG-20260503-WA0006.jpg" alt="Scenic landscape vista pencil sketch" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Landscape</span>
+                    <h3>Scenic Vista</h3>
+                    <p>Pencil</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <p class="section-label reveal-up">About Me</p>
+                <h2 class="section-title reveal-up delay-1">The Artist Behind<br>the <em>Strokes</em></h2>
+                <p class="about-description reveal-up delay-2">
+                    I'm Raj — a self-taught pencil and charcoal artist driven by a passion for capturing the essence of the world around me. From the subtle curves of a human face to the grandeur of sweeping landscapes, every sketch is a meditation on light, shadow, and emotion.
+                </p>
+                <p class="about-description reveal-up delay-3">
+                    My work spans portraits, landscapes, mythological subjects, wildlife, and anime fan art — each piece reflecting my belief that the simplest tools can create the most powerful art. Every line is placed with intention, every shadow crafted to tell a story.
+                </p>
+                <div class="about-stats reveal-up delay-4">
+                    <div class="stat">
+                        <span class="stat-number">24+</span>
+                        <span class="stat-label">Artworks</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual reveal-up delay-2">
+                <div class="about-image-stack">
+                    <img src="SketchUp_/IMG_20260502_013524.jpg" alt="Featured artwork - Portrait" class="about-img img-1">
+                    <img src="SketchUp_/IMG_20260430_173618.jpg" alt="Featured artwork - Landscape" class="about-img img-2">
+                    <img src="SketchUp_/IMG_20251224_231604.jpg" alt="Featured artwork - Anime" class="about-img img-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <p class="section-label reveal-up">Get In Touch</p>
+            <h2 class="section-title reveal-up delay-1">Let's Create<br>Something <em>Beautiful</em></h2>
+            <p class="contact-description reveal-up delay-2">
+                Interested in a commission, collaboration, or just want to say hello? Reach out through any of the channels below.
+            </p>
+            <div class="social-links reveal-up delay-3">
+                <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link" id="social-twitter" aria-label="Twitter / X">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <span>Twitter / X</span>
+                </a>
+                <a href="#" class="social-link" id="social-behance" aria-label="Behance">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 11C9.433 11 11 9.433 11 7.5S9.433 4 7.5 4H2v7h5.5zm0 2H2v7h5.5C9.433 20 11 18.433 11 16.5S9.433 13 7.5 13zM22 7h-7V5h7v2zm-3.5 4C16.015 11 14 13.015 14 15.5S16.015 20 18.5 20c1.573 0 2.96-.81 3.764-2.035l-1.728-1C20.04 17.588 19.32 18 18.5 18c-1.381 0-2.5-1.119-2.5-2.5h7c.028-.166.043-.332.05-.5C23.05 12.567 21.035 11 18.5 11zM16 14c.275-1.115 1.267-2 2.5-2s2.225.885 2.5 2h-5z"/></svg>
+                    <span>Behance</span>
+                </a>
+                <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-link" id="social-email" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">
+                <span class="logo-accent">R</span>aj<span class="logo-dot">.</span>
+            </a>
+            <p class="footer-text">&copy; 2026 Raj. All artworks are original creations.</p>
+            <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Close image viewer">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous image">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next image">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-medium"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor (desktop only) -->
+    <div id="cursor" class="custom-cursor"></div>
+    <div id="cursor-follower" class="custom-cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
