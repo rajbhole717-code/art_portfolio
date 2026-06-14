@@ -372,6 +372,38 @@
                     <span>Email</span>
                 </a>
             </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper reveal-up delay-4">
+                <div class="form-divider">
+                    <span>or send a message</span>
+                </div>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Subject</label>
+                        <input type="text" id="form-subject" name="subject" placeholder="Commission, Collaboration, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or just say hi..." required></textarea>
+                    </div>
+                    <button type="submit" id="form-submit" class="form-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                    <p class="form-note">I'll get back to you within 24–48 hours.</p>
+                </form>
+            </div>
         </div>
     </section>
 
